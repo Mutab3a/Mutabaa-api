@@ -8,7 +8,7 @@ import jwt
 import os
 from datetime import datetime, timedelta
 
-bp = Blueprint('auth', __name__, url_prefix='/api/auth')
+bp = Blueprint('auth', __name__, url_prefix='/api/v1')
 
 SECRET_KEY = os.getenv('JWT_SECRET_KEY', 'your-secret-key-change-in-production')
 
